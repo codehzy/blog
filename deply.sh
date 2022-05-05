@@ -2,8 +2,8 @@
 
 
 # 推送源码
-git push -f git@github.com:codehzy/myExperience.git master
-git push -f git@gitee.com:codehzy/myExperience.git master
+git push -f git@github.com:codehzy/blog.git master
+git push -f git@gitee.com:codehzy/blog.git master
 
 # 确保脚本抛出遇到的错误
 set -e
@@ -26,7 +26,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:codehzy/myExperience.git master:gh-pages
-git push -f git@gitee.com:codehzy/myExperience.git master:gh-pages
+git push -f git@github.com:codehzy/blog.git master:gh-pages
+git push -f git@gitee.com:codehzy/blog.git master:gh-pages
 
 cd -
