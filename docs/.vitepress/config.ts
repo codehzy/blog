@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-const { getTsSidebar, getVueSidebar } = require('./sidebar')
+const { getTsSidebar, getVueSidebar, getNodeSideBar } = require('./sidebar')
 
 export default defineConfig({
   base: '/vitepress-starter',
@@ -31,14 +31,16 @@ export default defineConfig({
         text: '前端技术',
         items: [
           { text: 'TS', link: '/ts/basics', activeMatch: '^/ts/' },
-          { text: 'vue', link: '/vue/baseVue3' }
+          { text: 'vue', link: '/vue/baseVue3' },
+          { text: 'node', link: '/node/nodeBase' }
         ]
       }
     ],
     // 侧边导航
     sidebar: {
       '/ts/': getTsSidebar(),
-      '/vue/': getVueSidebar()
+      '/vue/': getVueSidebar(),
+      '/node/': getNodeSideBar()
     }
   }
 })

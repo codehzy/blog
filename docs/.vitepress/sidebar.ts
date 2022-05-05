@@ -24,4 +24,18 @@ const getVueSidebar = () => {
   ]
 }
 
-export { getTsSidebar, getVueSidebar }
+// node侧边栏
+const getNodeSideBar = () => {
+  return [
+    {
+      text: 'node理论',
+      children: [{ text: 'node基础', link: '/node/nodeBase' }]
+    },
+    {
+      text: 'node实战',
+      children: [{ text: 'coderhub', link: '/node/coderhub' }]
+    }
+  ]
+}
+
+export { getTsSidebar, getVueSidebar, getNodeSideBar }
